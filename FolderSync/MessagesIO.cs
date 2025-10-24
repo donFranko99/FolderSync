@@ -21,7 +21,7 @@ public static class MessagesIO
     public static int AskForAndVerifySyncInterval()
     {
         System.Console.WriteLine("Enter desired synchronization interval (in seconds): ");
-        string input = Console.ReadLine();
+        string? input = Console.ReadLine();
         if (int.TryParse(input, out int syncInterval))
             return syncInterval;
         return 10;
