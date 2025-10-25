@@ -9,6 +9,7 @@ public static class MessagesIO
             return sourcePath;
         return "";
     }
+
     public static string AskForAndVerifyReplicaPath()
     {
         string replicaPath = "";
@@ -18,6 +19,7 @@ public static class MessagesIO
             return replicaPath;
         return "";
     }
+
     public static int AskForAndVerifySyncInterval()
     {
         System.Console.WriteLine("Enter desired synchronization interval (in seconds): ");
@@ -26,14 +28,17 @@ public static class MessagesIO
             return syncInterval;
         return 10;
     }
+
     public static void PrintStartingProcessMessage()
     {
         System.Console.WriteLine("Starting synchronization process...");
     }
+
     public static void SynchronisationCompleteMessage()
     {
         System.Console.WriteLine("Synchronization complete");
     }
+    
     public static void PrintEscapeMessage()
     {
         System.Console.WriteLine("To disable the synchronization process press ESC button");
